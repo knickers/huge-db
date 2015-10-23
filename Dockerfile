@@ -1,9 +1,9 @@
 FROM mariadb:10.0
 
-ENV HUGE_VERSION 3.1
+ENV HUGE_VERSION v3.1
 
 RUN apt-get update && apt-get install -y \
-		git openssl  \
+		git openssl \
 		--no-install-recommends \
 	&& git clone https://github.com/panique/huge.git \
 	&& git checkout tags/$HUGE_VERSION \

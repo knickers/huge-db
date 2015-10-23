@@ -5,7 +5,7 @@ ENV HUGE_VERSION v3.1
 RUN apt-get update && apt-get install -y \
 		git openssl ca-certificates \
 		--no-install-recommends \
-	&& git clone https://github.com/panique/huge.git \
+	&& git clone https://github.com/panique/huge \
 	&& git checkout tags/$HUGE_VERSION \
 	&& cd huge/application/_installation \
 	&& mysql -h localhost -u root -p 12345678 < 01-create-datebase.sql \

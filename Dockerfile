@@ -1,4 +1,4 @@
-FROM mariadb:10.0
+FROM mariadb:10.1
 
 ENV HUGE_VERSION v3.1
 
